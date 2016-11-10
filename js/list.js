@@ -8,7 +8,7 @@ define(function(require,exports,module){
 	$("#footer").html( _.template(_footer));
 	
 	$.ajax({
-		url:"../json/list_main.json",
+		url:"json/list_main.json",
 		success:function(res){
 		   var data = res.data;
 		   //console.log(data);
