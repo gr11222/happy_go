@@ -29,7 +29,7 @@ define(function(require,exports,module){
 		},
 		templateNav:function(){
 			$.ajax({
-				url: '../json/nav.json',
+				url: 'json/nav.json',
 				success:(function(rev){
 					var innerHtml = (_.template( _nav)({obj:rev.listNav}));
 					$('#list_banner_menu').html(innerHtml);
