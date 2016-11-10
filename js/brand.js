@@ -7,7 +7,7 @@ define(function(require, exports, module) {
     $("#footer").html(_.template(_footer));
     var _brandFn = _.template(_brand);
     $.ajax({
-        url: "../json/brand_list.json",
+        url: "json/brand_list.json",
         success: function(res) {
             var data = res.data;
             //console.log(data);

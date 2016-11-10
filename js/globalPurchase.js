@@ -7,7 +7,7 @@ define(function(require,exports,module){
 	var Go = {
 	    http:function(){
 	    	$.ajax({
-				url:"../json/global_pur_main.json",
+				url:"json/global_pur_main.json",
 				success:function(res){
 					var data = res.data;
 					console.log(data);

@@ -8,7 +8,7 @@ define(function(require,exports,module){
 	$("#footer").html( _.template(_footer));
 	
 	$.ajax({
-		url:"../json/list_main.json",
+		url:"json/list_main.json",
 		success:function(res){
 		   var data = res.data;
 		   //console.log(data);
@@ -29,7 +29,7 @@ define(function(require,exports,module){
 		},
 		templateNav:function(){
 			$.ajax({
-				url: '../json/nav.json',
+				url: 'json/nav.json',
 				success:(function(rev){
 					var innerHtml = (_.template( _nav)({obj:rev.listNav}));
 					$('#list_banner_menu').html(innerHtml);
